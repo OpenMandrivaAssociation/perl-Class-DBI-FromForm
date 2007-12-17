@@ -13,7 +13,6 @@ URL:		http://search.cpan.org/dist/%{realname}/
 Source:		%{realname}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-root
 
 %description
 Create and update Class::DBI objects from Data::FormValidator or HTML::Widget
