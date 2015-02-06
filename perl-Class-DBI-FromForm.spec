@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 Summary:	Update Class::DBI data using Data::FormValidator or HTML Widget
 License:	Artistic/GPL
