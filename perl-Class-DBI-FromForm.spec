@@ -2,14 +2,14 @@
 %define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Update Class::DBI data using Data::FormValidator or HTML Widget
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/Class-DBI-FromForm
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Class-DBI-FromForm-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
