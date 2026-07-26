@@ -1,15 +1,13 @@
 %define upstream_name    Class-DBI-FromForm
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.04
+Release:	7
 
 Summary:	Update Class::DBI data using Data::FormValidator or HTML Widget
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Class-DBI-FromForm
-Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Class-DBI-FromForm-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Class-DBI-FromForm-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 Create and update Class::DBI objects from Data::FormValidator or HTML::Widget
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -44,8 +42,7 @@ make test
 * Thu Jul 23 2009 Jérôme Quelin <jquelin@mandriva.org> 0.40.0-1mdv2011.0
 + Revision: 398797
 - rebuild
-- using %%perl_convert_version
-- fixed source field
+- using %0.04 fixed source field
 
 * Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.04-5mdv2009.0
 + Revision: 241178
